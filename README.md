@@ -45,3 +45,14 @@ $ lcpre -d -s "/" "/A/B/C" "/D/E/F"
 /
 ```
 
+## Options
+
+`lcpre` recognizes the following command-line options:
+
+```
+$ lcpre -h
+Usage of lcpre:
+  -d    print delimeter if it is the longest common prefix
+  -s string
+        delimeter used to separate words
+```
