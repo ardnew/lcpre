@@ -1,12 +1,24 @@
 # lcpre
 ##### Determine longest common prefix among multiple strings
 
+## Installation
+
+Use the built-in `go get` tool:
+
+```
+go get -v github.com/ardnew/lcpre
+```
+
+## Usage
+
 `lcpre` finds the longest common prefix of a given set of strings. 
 
 ```
 $ lcpre superman supercalifragilistic
 super
 ```
+
+If a single string is input, it is returned verbatim. If there does not exist a common prefix, the empty string is returned.
 
 The components of each string may be partitioned into substrings ("words") separated by a common delimeter substring (flag `-s`).
 
@@ -32,6 +44,4 @@ $ lcpre -s "/" "/A/B/C" "/D/E/F"
 $ lcpre -d -s "/" "/A/B/C" "/D/E/F"
 /
 ```
-
-If a single string is input, it is returned verbatim. If there does not exist a common prefix, the empty string is returned.
 
